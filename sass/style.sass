@@ -78,14 +78,17 @@ main,
 .navbar
   padding: 0 25px!important
   +screenLg
+    padding: 0 40px!important
+
+.navbar
+  +screenLg
     padding: 0 55px!important
   +screenXl
     padding-bottom: 15px!important
-
 .hoverLink
   margin-left: 18px
-  +screenXl
-    margin-left: 40px
+  +screenLg
+    margin-left: 20px
   &:hover
     color: #00BEB7!important
 
@@ -114,8 +117,10 @@ main,
     background: url("../img/bg.svg") 725px 550px no-repeat
     background-position-x: right
     background-position-y: bottom
+    padding: 150px 15px 0
+
   +screenXl
-    padding: 220px 0 100px 0
+    padding: 220px 15px 60px
     max-width: 1280px
     margin: 0 auto
 
@@ -180,3 +185,123 @@ main,
       +screenLg
         margin-bottom: 25px
 
+
+.design
+  padding-top: 0
+  +screenLg
+    padding-bottom: 70px
+    max-width: 1200px
+    margin: 0 auto
+  &_top
+    padding-top: 50px
+    padding-bottom: 30px
+    +screenLg
+      padding-top: 100px
+      padding-bottom: 70px
+  &_header
+    padding-left: 15px
+  &_title
+    font-weight: bold
+    display: inline
+    font-size: 18px
+    border-bottom: 3px solid $colorBlue
+    padding-bottom: 3px
+    +screenLg 
+      font-size: 22px
+      border-bottom: 5px solid $colorBlue
+
+.design_desс
+    line-height: 19px
+    margin: 20px 0 44px
+    max-width: 670px
+    +screenLg
+      font-size: 16px
+
+.card
+  &_list
+    padding: 0 15px 
+  &_item
+    margin-bottom: 55px
+    +screenLg
+      margin-bottom: 0
+    &-link
+      // height: 250px
+      width: 100%
+      overflow: hidden
+
+    &-img
+      height: 250px
+      width: 100%
+      object-fit: cover
+      object-position: center
+      +screenLg
+        filter: grayscale(90%)
+        &:hover
+          cursor: pointer
+          filter: none
+          transition: 0.3s
+      +screenXl
+        height: 295px
+
+
+  &_body
+    padding-bottom: 40px
+    &-link
+      &:hover
+        text-decoration: none!important
+    &-title
+      font-size: 18px
+      font-weight: bold
+      margin: 12px 0
+      +screenLg
+        font-size: 20px
+        margin: 20px 0 4px
+        &:hover
+          cursor: pointer
+          color: $colorBlue
+          // text-decoration: none!important
+    &-text
+      line-height: 19px
+      +screenLg
+        font-size: 16px
+        // padding-bottom: 40px
+
+
+
+
+.project
+  &_header
+    padding-bottom: 20px
+
+  &_list
+    max-width: 1200px 
+    padding-bottom: 60px!important
+  &_item
+    padding: 15px
+    &-link
+    &-img
+      width: 90px
+      height: 70px
+      object-fit: cover
+      object-position: center
+      +screenLg
+        width: 150px
+        height: 120px
+      +screenXl
+        width: 170px
+        height: 136px
+
+
+.info
+  &_header
+    margin-bottom: 25px!important
+
+.about
+  &_list
+  &_item
+    padding-bottom: 15px
+
+.scils
+  &_list
+  &_item
+    padding-bottom: 15px !important
