@@ -74,6 +74,16 @@ a
     border-bottom: 2px $colorBlue solid
     +screenLg
       font-size: 24px
+  &-nav
+    width: 30%
+    margin: 0 0 0 auto
+    background: #171717
+    border-left: 1px #00BEB7 solid
+    border-bottom: 1px #00BEB7 solid
+    +screenLg 
+      width: 100%
+      border: none
+
 main,
 .navbar
   padding: 0 25px!important
@@ -164,7 +174,8 @@ main,
 
 
   &_desc
-    margin: 40px 0 !important
+    margin: 0 !important
+    margin-top: 40px!important
     &-item
       // +screenLg
       //   paddingt: 6%!important
@@ -187,16 +198,17 @@ main,
 
 
 .design
-  padding-top: 0
+  padding-top: 100px
   +screenLg
     padding-bottom: 70px
     max-width: 1200px
     margin: 0 auto
+    padding-top: 130px
   &_top
-    padding-top: 50px
+    padding-top: 100px
     padding-bottom: 30px
     +screenLg
-      padding-top: 100px
+      padding-top: 130px
       padding-bottom: 70px
   &_header
     padding-left: 15px
@@ -208,7 +220,7 @@ main,
     padding-bottom: 3px
     +screenLg 
       font-size: 22px
-      border-bottom: 5px solid $colorBlue
+      border-bottom: 4px solid $colorBlue
 
 .design_desс
     line-height: 19px
@@ -223,6 +235,8 @@ main,
   &_item
     margin-bottom: 55px
     +screenLg
+      margin-bottom: 0
+    &:last-child
       margin-bottom: 0
     &-link
       // height: 250px
@@ -275,7 +289,8 @@ main,
 
   &_list
     max-width: 1200px 
-    padding-bottom: 60px!important
+    +screenLg
+      padding-bottom: 15px !important
   &_item
     padding: 15px
     &-link
@@ -293,15 +308,107 @@ main,
 
 
 .info
+  padding-top: 100px!important
+  +screenMd
+    display: flex
+    justify-content: space-between
+    padding-bottom: 40px
+  +screenMd
+    padding-left: 15px
+  +screenXl
+    max-width: 1200px
+    margin: 0 auto
   &_header
     margin-bottom: 25px!important
 
 .about
+  padding-left: 15px
+  +screenMd
+    width: 57%
   &_list
+    max-width: 500px
+    +screenSm
+      margin: 0 auto
+    +screenMd
+      margin: 0
+      max-width: 670px
+    +screenLg
+      font-size: 16px
+      margin-top: 32px
+      line-height: 20px
+
   &_item
     padding-bottom: 15px
+    +screenLg
+      padding-bottom: 8px
 
 .scils
+  padding-left: 15px
+  margin-bottom: 25px
+  +screenMd
+    width: 40%
+  +screenLg
+    padding-left: 15px
   &_list
+    max-width: 500px
+    +screenSm
+      margin: 0 auto
+    +screenMd
+      margin: 0
+      // width: 100%
+      max-width: 366px
+    +screenLg
+      font-size: 16px
+      margin-top: 32px
+      line-height: 20px
+
   &_item
     padding-bottom: 15px !important
+    padding-left: 16px
+    background-image: url("../img/icon.png")
+    background-repeat: no-repeat
+    background-size: 6px 6px
+    background-position-x: left
+    background-position-y: 5px
+    +screenLg
+      padding-bottom: 8px
+
+
+.contacts
+  max-width: 300px
+  margin: 0 auto
+  padding: 20px 0
+  +screenLg
+    padding: 28px 0 50px
+
+
+  &_mail
+    display: inline-block
+    text-align: center
+    width: 100%
+    font-size: 18px
+    font-weight: bold
+    color: $colorBlue !important
+    +screenLg
+      font-size: 22px
+  &_soc
+    display: flex
+    margin: 5px 0
+    +screenLg
+      margin-top: 10px
+      margin-bottom: 35px
+    &-item
+      padding: 0 7px
+
+
+    &-link
+      font-size: 12px
+      +screenLg
+        font-size: 14px
+
+  &_sign
+    font-size: 12px
+    width: 100%
+    text-align: center
+    +screenLg
+      font-size: 14px
